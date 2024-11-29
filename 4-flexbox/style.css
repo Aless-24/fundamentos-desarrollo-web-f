@@ -7,22 +7,33 @@
 /* Padre */
 .container{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    /* align-items: stretch; */
+    /* align-content: stretch; */
+    flex-wrap: nowrap;
+    gap: 30px;
 
-    width: 500px;
+    width: 600px;
     height: 600px;
     background-color: blueviolet;
     border: 3px solid black;
     margin: 40px auto;
 }
-
+/* Hijo */
 .ball{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     width: 100px;
     height: 100px;
     background-color: orange;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 3px solid black;
     color: white;
+}
+
+.tres{
+    background-color: #232323;
+    align-self: ;
 }
